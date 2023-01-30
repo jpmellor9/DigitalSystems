@@ -24,6 +24,7 @@ mt = 2;
 mt = 3;
 #100ps assert (Y==4'b0110) $display("passed %b", mt); else $error("Failed for %b", mt);
 
+
 end
 
 endmodule
