@@ -7,7 +7,15 @@ genvar i;
 generate 
  for (i=0; i<N; i=i+1) 
  begin : i_loop1
-	not ui (Y[i], X[i]);
+ if(i == 0 | i == 2 | i == 4 | i == 6 | i == 8)
+ begin
+	assign Y[i] = ~X[i];
+	end
+	
+	else 
+	begin
+	assign Y[i] = X[i];
+	end
  end
 endgenerate
 
