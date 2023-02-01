@@ -14,7 +14,7 @@ begin
 	automatic logic expected[4] = {1'b1, 1'b0, 1'b1, 1'b1};
 
 	//Set inputs
-	{aa, bb, cc, dd} = 4'b1011;
+	{aa, bb, cc, dd} = 4'b0100;
 
 	//Iterate over all input sequences
 	for (int n=0; n<4; n = n + 1) begin
