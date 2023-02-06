@@ -11,7 +11,16 @@ mul m1(Y,A,B);
 
 initial
 begin
-	//Write test code here
+automatic int S;
+	for (int i=0; i<2**N; i=i+1)begin
+         for (int j=0; j<2**N; j=j+1)begin
+          A=i;
+          B=j; 
+          S = i*j;
+          #10ps;
+          assert (Y == S) $display("PASS %d x %d = %d", A, B, Y); else $display("ERROR %d", Y);
+         end
+          end     
 end
 
 endmodule
