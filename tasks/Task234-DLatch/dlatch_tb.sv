@@ -50,6 +50,11 @@ begin
 	check(1);
 
 	//Latching low : with input D LOW, pull EN HIGH then LOW - Q should remain LOW
+        EN=1;
+        check(0);
+
+        EN=0;
+        check(0);
 	// Write code below
 
 end

@@ -4,7 +4,7 @@ logic CLK = 0;
 logic D, Q;
 
 //Instantiate a DFF
-d_ff u1(Q,D,CLK);
+d_ff u1(Q,D,CLK, n_Reset);
 
 //Generate 5 clock cycles
 initial begin
